@@ -1,11 +1,9 @@
-using Unity.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DsihData", menuName = "Scriptable Objects/DsihData")]
+[CreateAssetMenu(fileName = "DishData", menuName = "DishData")]
 public class DishData : ScriptableObject
 {
-    public string dishName;
-    public string description;
+    public string dishTitle;
     public Sprite dishImage;
     
 }

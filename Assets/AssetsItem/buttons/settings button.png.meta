@@ -116,12 +116,12 @@ TextureImporter:
       name: settings button_0
       rect:
         serializedVersion: 2
-        x: 30
+        x: 0
         y: 6
-        width: 464
+        width: 500
         height: 488
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f2b138ee59cb8a74ba05ecee69e2b090
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      settings button_0: 6606340810530443602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

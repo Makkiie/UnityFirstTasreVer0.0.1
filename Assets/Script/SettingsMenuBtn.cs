@@ -21,9 +21,5 @@ public class SettingsMenuBtn : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

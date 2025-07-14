@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      first taste logo menu_0: -2534276461474152234
+      first taste logo menu_1: 2022295426667196550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
