@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3248815163054648981}
   - component: {fileID: 2955475022786769049}
   - component: {fileID: 5067720249077613614}
+  - component: {fileID: 7106654414090436211}
   m_Layer: 5
   m_Name: indicator
   m_TagString: Untagged
@@ -121,8 +122,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SliderAnimationController, Assembly-CSharp
-        m_MethodName: SlideInfoPanel
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Opened
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7106654414090436211}
+        m_TargetAssemblyTypeName: IndicatorController, Assembly-CSharp
+        m_MethodName: ShowDishInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,3 +145,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7106654414090436211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128054193354419334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4d852e420860e459ba990e043d6a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dishData: {fileID: 11400000, guid: f541912d8e6970a4198776f3a06d9886, type: 2}
+  levelIndex: 0
+  infoPanel: {fileID: 0}
+  dishImageDisplay: {fileID: 0}
+  dishTitleDisplay: {fileID: 0}
+  Score: {fileID: 0}
+  buttonImage: {fileID: 2955475022786769049}
+  lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
