@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb32f7ad0b72d6748ba2897ce5827204, type: 3}
   m_Name: Adobo
   m_EditorClassIdentifier: 
-  dishName: Adobo
-  description: dfdsdfsdf
+  dishTitle: PorkAdobo
   dishImage: {fileID: -8053197629789734714, guid: 521cace570c1f244c913052afb4aaa75, type: 3}
