@@ -21,7 +21,8 @@ public class UITutorialManager : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("TutorialDone", 0) == 5)
+        //Count for the tutorial
+        if (PlayerPrefs.GetInt("TutorialDone", 0) == 1)
         {
             dialogCanvas.SetActive(false);
             return;
@@ -45,13 +46,21 @@ public class UITutorialManager : MonoBehaviour
 
             readyToAdvance = false;
 
-            if (line.uiToHighlight != null)
-                HighlightUI(line.uiToHighlight.gameObject);
+            Button buttonToHighlight = null;
 
-            if (line.waitForClickOnUI && line.uiToHighlight != null)
+            if (!string.IsNullOrEmpty(line.uiElementName))
+            {
+                GameObject uiObj = GameObject.Find(line.uiElementName);
+                if (uiObj != null)
+                {
+                    buttonToHighlight = uiObj.GetComponent<Button>();
+                    HighlightUI(uiObj);
+                }
+            }
+            if (line.waitForClickOnUI && buttonToHighlight != null)
             {
                 waitingForClick = true;
-                line.uiToHighlight.onClick.AddListener(() => OnUIElementClicked(line.uiToHighlight));
+                buttonToHighlight.onClick.AddListener(() => OnUIElementClicked(buttonToHighlight));
                 yield return new WaitUntil(() => !waitingForClick);
             }
             else
@@ -72,7 +81,7 @@ public class UITutorialManager : MonoBehaviour
         // Example: change color, add outline, or scale
         var image = ui.GetComponent<Image>();
         if (image != null)
-            image.color = Color.yellow; // TEMPORARY highlight
+            image.color = Color.white; // TEMPORARY highlight
 
         // Add pulse animation here if you want
     }

@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68064927c6f472e4f9d407a16b51f842, type: 3}
-  m_Name: SettingsLine
+  m_Script: {fileID: 11500000, guid: 724470d6715cbf04895d11b99db09626, type: 3}
+  m_Name: 4
   m_EditorClassIdentifier: 
-  dialogText: Tap Settings
-  uiElementName: Settings
-  waitForClickOnUI: 1
+  GamedialogText: "That\u2019s why adobo is often called the unofficial national
+    dish  it\u2019s simple, delicious, and truly Filipino at heart!"
+  uiToHighlight: {fileID: 0}
+  waitForClickOnUI: 0

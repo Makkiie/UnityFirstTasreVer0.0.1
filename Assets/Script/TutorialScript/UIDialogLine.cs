@@ -7,6 +7,6 @@ public class UIDialogLine : ScriptableObject
     [TextArea]
     public string dialogText;
 
-    public Button uiToHighlight;     // Must be UnityEngine.UI.Button
+    public string uiElementName;     // Must be UnityEngine.UI.Button
     public bool waitForClickOnUI;
 }
