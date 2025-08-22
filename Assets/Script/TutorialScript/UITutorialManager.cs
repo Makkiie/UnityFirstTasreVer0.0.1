@@ -22,7 +22,7 @@ public class UITutorialManager : MonoBehaviour
     void Start()
     {
         //Count for the tutorial
-        if (PlayerPrefs.GetInt("TutorialDone", 0) == 1)
+        if (PlayerPrefs.GetInt("TutorialDone", 0) == 5)
         {
             dialogCanvas.SetActive(false);
             return;

@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724470d6715cbf04895d11b99db09626, type: 3}
-  m_Name: 3
+  m_Script: {fileID: 11500000, guid: eb32f7ad0b72d6748ba2897ce5827204, type: 3}
+  m_Name: ChickenAsado
   m_EditorClassIdentifier: 
-  GamedialogText: Used vinegar and salt to preserve meat, and over time, soy sauce
-    was introduced, blending both local and foreign flavors
-  uiToHighlight: {fileID: 0}
-  waitForClickOnUI: 0
+  dishTitle: Chicken Asado
+  dishImage: {fileID: 0}
