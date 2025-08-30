@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      refridgerator_front_view_0: -6544969701541531430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
